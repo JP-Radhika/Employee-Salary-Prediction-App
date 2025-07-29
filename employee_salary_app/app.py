@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 # Load your trained model
-model = pickle.load(open('model_pickle.pkl', 'rb'))
+model = pickle.load(open('model_pickle (3).pkl', 'rb'))
 
 # Mapping Dictionaries (Example mappings, adjust based on your dataset's encoding)
 workclass_mapping = {
@@ -104,3 +104,7 @@ if st.button('Predict Income'):
 
     prediction = model.predict(input_data)[0]
     st.success(f'Predicted Income Group: {prediction}')
+
+    
+
+
